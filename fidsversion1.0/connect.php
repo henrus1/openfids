@@ -8,9 +8,9 @@
 
 // Simply Update the Host, Username  and Password to match your SQL server. Also ensure that the database name and database call 'fids' has been created as a utf16_bin database. For any help please don't hestiate to email openfids@outlook.com for free support.
 
-$host		=	'localhost';
-$usrname	=	'hot';
-$passwd		=	'hots';
+$host		=	'host';
+$usrname	=	'username';
+$passwd		=	'password';
 
 ////////////////////////////////////////////
 ////////////////////////////////////////////
