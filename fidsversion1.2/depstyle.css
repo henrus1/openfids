@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(28,32,99);
+    color: white;
+    font-size: 150%;
+    
+} 
+
+
+td {
+    border-bottom: 1px solid white;
+}
