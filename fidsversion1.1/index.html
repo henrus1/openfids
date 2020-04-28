@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body {
+    font-family: "Arial", Times, serif;
+	  }
+
+
+</style>
+
+</head>
+<body>
+<center>
+<h1>Open FIDS</h1>Version 1.0 
+
+
+<h3>Public Displays</h3>
+<a href="departures.php"><button type="button">Public Departures Gate Display</button></a>
+<a href="departures.php?type=c"><button type="button">Public Departures Check In Display</button></a>
+<a href="arrivals.php"><button type="button">Public Arrivals Display</button></a>
+<a href="combi.php"><button type="button">Public Arrivals/Departures (Combi) Display</button></a>
+ 
+ <h3>Staff Displays</h3>
+<a href="depstaff.php"><button type="button">Staff Departures Display</button></a>
+<a href="arrstaff.php"><button type="button">Staff Arrivals Display</button></a>
+
+ <h3>Gate/Check In/Baggage Belt Displays (Coming Soon)</h3>
+<a href="#"><button type="button" disabled="">Gate Display</button></a>
+<a href="#"><button type="button" disabled="">Check In Display</button></a>
+<a href="#"><button type="button" disabled="">Baggage Belt Display</button></a>
+
+ <h3>Admin Section</h3>
+<a href="depadmin.php"><button type="button">Admin Departures</button></a>
+<a href="arradmin.php"><button type="button">Admin Arrivals</button></a><br><br>
+<a href="airports.php"><button type="button">Admin Airports</button></a>
+<a href="airlines.php"><button type="button">Admin Airlines</button></a><br><br>
+<a href="#"><button type="button" disabled>Admin Gates (Coming Soon)</button></a>
+<a href="#"><button type="button" disabled>Admin Check In (Coming Soon)</button></a>
+<a href="#"><button type="button" disabled>Admin Baggage (Coming Soon)</button></a><br><br>
+<a href="#"><button type="button" disabled>FIDS Settings (Coming Soon)</button></a>
+ </center>
+ <br><br><br>
+<h3>How to Use</h3>
+Once install is complete (see below) the FIDS system is ready to be used. The pages are designed to update every 10 seconds with the latest information (the time can be changed in the settings.php file). Each display can be setup with a full screen web browser displaying the required screen. If the size of the display needs to be changed then simply zoom in or out using your web browsers zoom settings.
+<br><br>
+It is also possible to limit how many flights appear on the display by simply adding ?type=X (where x is a number of flights) to the end of the url after the .php section.
+<br><br>
+Adding, Updating and Deleting flights is done through the admin portal (which currently requires no login so be careful). Pressing the new arrival/departure will open a page to add a new flight, you must have already added airports and airlines to continue. Currently it is required to give each new flight an operating airline, flight number, destination airport, scheduled date, scheduled time, Estimated time of arrival/departure and a type (either International, Domestic or Other).
+<br><br>
+Other details including slot time (only displayed on staff displays), Aircraft Registration (rego), Bay, Gate, Aircraft type (A/C), Baggage Belt/Checkin Counter, Status and Staff Meessage are all optional but can be added to a flight provide a better FIDS. 
+<br><br>
+Finally Some parts of this FIDS use HTML5 components which are only support in new version of web browsers including Google Chrome and Firefox. If functions including date and time pickers are not loading then please try a different web browser.
+
+<h3>Install</h3>
+First ensure that a databased called 'fids' (without the marks) has been created in MySQL/PHP MyAdmin and create a new user account with access to the fids database and SELECT, INSERT, UPDATE, DELETE, CREATE permissions.<br><br>
+
+Open the connect.php file and update the username, password and host (ensuring that the database name is kept as fids). You should now be able to run the install by opening the install.php file in a web browser. If sucessful you'll get a messsage saying "Install Sucessful".
+<br><br>
+If the install is sucessful please delete the install.php file and begin by adding airports and airlines using the buttons above. Once the setup has been complete you should now be able to add, edit, delete flights and view them on the fids.
+
+<h3>In this Version 1.1</h3>
+This edition of Open FIDS provides updates to PHP in the program with support for PHP Version 7. The same unsecure admin portal is also in use for changing of these displays so do be careful as anyone with access to the links/server above would be able to change the arrivals and departures boards.
+
+<br><br><h3>Planned Updates</h3>
+Version 2.0<br>
+- Gate, Baggage Belt and Checkin Displays<br>
+- Settings page to change clock, text and colour schemes<br>
+- Changes to how the Arrival/Departures boards manage flight dates<br><br>
+
+Future Editions<br>
+- User accounts for the admin portal <br>
+
+<br><h3>Contact</h3>
+Like the Software, got a specific request or further questions? Email us today at openfids@henrus1.com<br>
+We are also able to modifiy the FIDS if you've got something specific in mind or if you need help with the setup.
+
+
+
+
+
+</body>
+</html>
