@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body {
+    font-family: "Arial", Times, serif;
+	  }
+
+
+</style>
+
+</head>
+<body>
+<center>
+<h1>Open FIDS</h1>Version 1.2 
+
+
+<h3>Public Displays</h3>
+<a href="../departures.php"><button type="button">Public Departures Gate Display</button></a>
+<a href="../departures.php?type=c"><button type="button">Public Departures Check In Display</button></a>
+<a href="../arrivals.php"><button type="button">Public Arrivals Display</button></a>
+<a href="../combi.php"><button type="button">Public Arrivals/Departures (Combi) Display</button></a>
+ 
+ <h3>Staff Displays</h3>
+<a href="../depstaff.php"><button type="button">Staff Departures Display</button></a>
+<a href="../arrstaff.php"><button type="button">Staff Arrivals Display</button></a>
+
+
+ <h3>Admin Section</h3>
+<a href="depadmin.php"><button type="button">Admin Departures</button></a>
+<a href="arradmin.php"><button type="button">Admin Arrivals</button></a><br><br>
+<a href="airports.php"><button type="button">Admin Airports</button></a>
+<a href="airlines.php"><button type="button">Admin Airlines</button></a><br><br>
+ </center>
+ <br><br><br>
+<h3>How to Use</h3>
+Once install is complete (see below) the FIDS system is ready to be used. The pages are designed to update every 10 seconds with the latest information (the time can be changed in the settings.php file). Each display can be setup with a full screen web browser displaying the required screen. If the size of the display needs to be changed then simply zoom in or out using your web browsers zoom settings.
+<br><br>
+It is also possible to limit how many flights appear on the display by simply adding ?type=X (where x is a number of flights) to the end of the url after the .php section.
+<br><br>
+Adding, Updating and Deleting flights is done through the admin portal (which currently requires no login so be careful). Pressing the new arrival/departure will open a page to add a new flight, you must have already added airports and airlines to continue. Currently it is required to give each new flight an operating airline, flight number, destination airport, scheduled date, scheduled time, Estimated time of arrival/departure and a type (either International, Domestic or Other).
+<br><br>
+Other details including slot time (only displayed on staff displays), Aircraft Registration (rego), Bay, Gate, Aircraft type (A/C), Baggage Belt/Checkin Counter, Status and Staff Meessage are all optional but can be added to a flight provide a better FIDS. 
+<br><br>
+Finally Some parts of this FIDS use HTML5 components which are only support in new version of web browsers including Google Chrome and Firefox. If functions including date and time pickers are not loading then please try a different web browser.
+
+
+<h3>In this Version 1.2</h3>
+This version implements a secure admin portal which can be managed via the Apache Web Service the platform runs on.
+
+<br><h3>Contact</h3>
+Like the Software, got a specific request or further questions? Email us today at openfids@henrus1.com<br>
+I am also able to modifiy the FIDS if you've got something specific in mind or if you need help with the setup.
+
+
+
+
+
+</body>
+</html>
